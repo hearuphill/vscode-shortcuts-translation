@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #020a2c">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Find all available VSCode shortcuts for MacOS, Linux and Windows on this site." />
+  <meta name="keywords" content="vscode, shortcuts, software, coding, development, engineering, inclusive, community" />
+  <meta name="robots" content="index, follow" />
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="VSCode Shortcuts" />
+  <meta property="og:description"
+    content="Find all available VSCode shortcuts for MacOS, Linux and Windows on this site." />
+  <meta property="og:image" content="https://vscode-shortcuts.com/public/img/vscode-logo-fb.png" />
+  <meta property="og:url" content="https://vscode-shortcuts.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!--  Non-Essential, But Recommended -->
+  <meta property="og:site_name" content="VSCode Shortcuts" />
+  <meta name="twitter:image:alt" content="VSCode Shortcuts icon" />
+  <link rel="stylesheet" href="./public/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="./public/css/responsive.dataTables.min.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./public/img/site_icon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./public/img/site_icon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./public/img/site_icon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./public/img/site_icon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./public/img/site_icon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./public/img/site_icon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./public/img/site_icon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./public/img/site_icon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/img/site_icon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./public/img/site_icon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/img/site_icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./public/img/site_icon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/img/site_icon/favicon-16x16.png" />
+  <link rel="manifest" href="./public/img/site_icon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./public/img/site_icon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="./public/css/styles.css" />
+  <title>适用于 MacOS、Linux 和 Windows 的所有 VSCode 快捷键</title>
+  <style>
+    .dataTables_wrapper .dataTables_filter input {
+      margin-left: 0.5em;
+      border: 1px;
+      border-style: solid;
+      border-color: #363654;
+    }
+
+    label {
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="p-4">
+      <img class="h-16 shadow-lg" src="public/img/vscode-logo-small.png" alt="VSCode Shortcuts logo"
+        title="VSCode Shortcuts logo" />
+    </div>
+    <h1 class="py-4 px-2 text-4xl text-blue-600 text-center">
+      适用于 MacOS、Linux 和 Windows 的所有 VSCode 快捷键
+    </h1>
+    <p style="color: white" class="m-10 md:text-center md:justify">
+      Here is a listing of all VS Code shortcuts for all popular operating systems (Mac, Linux, and Windows)
+      organized and listed in one place.
+      <br />These shortcuts are taken from the official documentation on
+      <a class="font-bold text-indigo-600" rel="noopener" href="https://code.visualstudio.com/docs"
+        target="_blank">Microsoft Visual Studio Code.</a>
+      <br />
+    </p>
+    <div class="m-10">
+      <p class="font-bold text-blue-600 uppercase" id="table-top">目录</p>
+      <div class="flex mb-4">
+        <div class="w-1/2">
+          <nav>
+            <a href="#general" style="background-color: #020a2c"
+              class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md bg-gray-100 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠通用 </span>
+            </a>
+            <a href="#basic-editing"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠基本编辑 </span>
+            </a>
+            <a href="#multi-cursor-selection"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠多光标和选择 </span>
+            </a>
+            <a href="#search-and-replace"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠查找和替换 </span>
+            </a>
+            <a href="#rich-languages-editing"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠多语言编辑 </span>
+            </a>
+            <a href="#navigation"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠导航 </span>
+            </a>
+          </nav>
+        </div>
+        <div class="w-1/2">
+          <nav>
+            <a href="#editor-management" style="background-color: #020a2c"
+              class="group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md bg-gray-100 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠编辑器管理 </span>
+            </a>
+            <a href="#file-management"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠文件管理 </span>
+            </a>
+            <a href="#display"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠显示 </span>
+            </a>
+            <a href="#debug"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠调试 </span>
+            </a>
+            <a href="#integrated-terminal"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600"> ♠集成终端 </span>
+            </a>
+            <a href="#useful-resources"
+              class="mt-1 group flex items-center px-3 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-100 transition ease-in-out duration-150">
+              <span class="truncate text-gray-600">
+                ♠实用资源 <span class="text-yellow-500">★★★</span>
+              </span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="general">
+        通用 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a href="#table-top"
+            style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示命令面板
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + P
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + P
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    快速打开文件 | 转到文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + P
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + P
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    新建窗口
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + N
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + N
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                   关闭窗口
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + W
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + W
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至用户设置
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + , (comma)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + , (comma)
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示键盘快捷键菜单
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command K , Command S
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + S
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="basic-editing">
+        基本编辑 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a href="#table-top"
+            style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    剪切一行（未选取时）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + X
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + X
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    复制一行（未选取时）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + C
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + C
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    上下移动行（多行时亦可用）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + 下方向键 / Option + 上方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Alt + 下方向键 / Alt + 上方向键
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    上下复制行（多行时亦可用）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + 下方向键 / Shift + Option + 上方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + 下方向键 / 上方向键
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    删除一行
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + K
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + K
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在上方/下方插入一行
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + Enter / Command + Shift + Enter
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Enter / Ctrl + Shift + Enter
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    跳转至匹配的括号
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + \
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + \
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    增加缩进/减少行缩进
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + ] (closing square bracket)
+                    <p>/ Command + [ ( opening square bracket)</p>
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + ] (closing square bracket) / Ctrl + [ ( opening square bracket)
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至行首/行尾
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + 左方向键 / fn + 右方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + 上方向键 / fn + Contol + 下方向键
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至文件开头/末尾
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + 上方向键 / Command + 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Home / Ctrl + End
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    向上/下滚动行
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + Control + 上方向键 / fn + Contol + 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + 上方向键 / Contol + 下方向键
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    向上/下滚动页
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + 上方向键 / fn + 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Alt + PgUp / Alt + PgDn
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    折叠/展开区域
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + Command + [ / Option + Command + ]
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + Shift [ / Control + Shift ]
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    折叠/展开所有子区域
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , Command [ / Command + K , Command ]
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K , Ctrl [ / Ctrl + K , Ctrl ]
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    折叠/展开所有区域
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , Command 0 / Command + K , Command J
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + 上方向键 / Contol + 下方向键
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    添加行注释
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , Command C (Command '/' works too)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl K, Ctrl C
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    删除行注释
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , Command U
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl K, Ctrl U
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换行注释
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + /
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + /
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换块注释
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + A
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + A
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换自动换行
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + Z
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Alt + Z
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="multi-cursor-selection">
+        多光标和选择 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a
+            href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    插入光标
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + click
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Alt + Click
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在上方/下方插入光标
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + Option + 上方向键 / Command + Option + 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift+ Alt + 上方向键 / Shift+ Alt + 下方向键
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    撤销刚才的光标操作
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + U
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + U
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在所有选中的行末插入光标
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + I
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + I
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    选中当前行
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + L
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + L
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    选中当前选择的所有出现位置
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + L
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + L
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    选中当前单词的所有出现位置
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + fn + F2
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + F2
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    扩大/缩小当前选择的范围
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + 右方向键 / 左方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + 右方向键 / 左方向键
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    列（框）选择
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + 拖动鼠标
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + 拖动鼠标
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="search-and-replace">
+        查找和替换 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a
+            href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    打开查找菜单条
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + F
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    打开查找和替换菜单条
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + Option + F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + H
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    找到当前选择单词的下一处/上一处位置
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + G / Command + Shift + G
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    F3 / Shift + F3
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    选中所有匹配项
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + Enter
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Alt + Enter
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    将选择添加到下一个查找匹配项 
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + D
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + D
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    将上一个选择移到下一个查找匹配项 
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Command + L
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + D
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                     选中当前单词的所有出现位置
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + fn + F2
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + F2
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    扩大/缩小当前选择
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + 右方向键 / 左方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + 右方向键 / 左方向键
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    列（框）选择 
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + 拖动鼠标
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + 拖动鼠标
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="rich-languages-editing">
+        多语言编辑 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a href="#table-top"
+            style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    触发建议
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + Space
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Space
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    触发参数提示
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + Space
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + Space
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    格式化文档
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + I
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    格式化当前选择
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Command + F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl+ K, Ctrl + F
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转到定义
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F12
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    F12
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    查看定义
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + fn + F12
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + F10 || Alt + F12
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在侧边栏打开定义
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, fn + F12
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, F12
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    快速修复
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + . (dot)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + . (dot)
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示参考
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + fn + F12
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + F12
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    重命名符号
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F2
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">F2</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    裁剪尾随空格
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Command + X
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + X
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    变更文件语言 （如：从 HTML 变更为 Python）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, M
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, M
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="navigation">
+        导航 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900">
+          <a href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示所有符号
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + T
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + T
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至指定行
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + G
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + G
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至指定文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + P
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + P
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至符号
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + O
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + O
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示问题面板 （也可以切换）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + M
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + M
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    转至上一处/下一处错误或警告
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F8 / Shift + fn + F8
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    F8 / Shift + F8
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在历史编辑器组中导航
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + Shift + Tab
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + Tab
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    Go forward / backward across open tabs
+                    转至下一个/上一个打开的标签页
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + - (dash) / Shift + Control + - (dash)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + - (dash) / Ctrl + Alt + - (dash) || Alt + 右方向键 / Alt +
+                    左方向键
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    Toggle Tab moves focus
+                    切换 Tab 键移动焦点
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + M
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + M
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="editor-management">
+        编辑器管理 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a
+            href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    关闭编辑器
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + W
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + W
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    关闭文件夹
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, F
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    拆分编辑器
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + \ (反斜线)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + P
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    聚焦于第 1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>
+                    个编辑器组
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command 1 / 2 / 3
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + 1 / 2 / 3
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    聚焦到左侧/右侧编辑器组
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Command + 左方向键 / Command + 右方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + 左方向键 / Ctrl + 右方向键
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    向左/向右移动编辑器
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Command + Shift + 左方向键 / 右方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + PgUp / PgDn
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    移动活动的编辑器组
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, 左方向键 / 右方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, 左方向键 / 右方向键
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="file-management">
+        文件管理 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a
+            href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    打开新文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + N
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + N
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    打开文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + O
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + O
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    保存文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + S
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + S
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    保存为...
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + S
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + S
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    保存所有
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + S
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, S
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    关闭
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + W
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl W || Ctrl F4
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    关闭所有
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Command + W
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + W
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    重新打开关闭的编辑器
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + T
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Ctrl + T
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    保持预览模式编辑器处于打开状态 
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, Enter
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Enter
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    打开下一个/上一个窗口或标签页
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + Tab / Shift + Control + Tab
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Tab / Shift + Ctrl + Tab
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    复制当前文件的路径
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, P
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, P
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在资源管理器中显示活动文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, R
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, R
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                    在新窗口/实例中显示活动文件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K, O
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, O
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="display">
+        显示 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a href="#table-top"
+            style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换全屏
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + Command + F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    F11
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换编辑器布局（水平/垂直）
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Option + Command + 0
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Alt + 0
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    放大/缩小 
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + = (equal) / - (dash)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + = (equal) / - (dash)
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    Copy line down/up (works for selected lines too)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Option + 下方向键 / Shift + Option + 上方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + W
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换侧边栏可见性
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + B
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + B
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示资源管理器/切换焦点
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + E
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + E
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示查找
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + F
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + F
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示源代码控制
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + G
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Ctrl + G
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示调试
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + D
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Ctrl + D
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示插件
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + X
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Ctrl + X
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在文件中替换
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + H
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Ctrl + H Control + 上方向键 / Contol + 下方向键
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    切换搜索详细信息
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + J
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Ctrl + J
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示输出面板
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + U
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + H || Ctrl + Shift + U
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    打开 Markdown 预览
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Command + V
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + V
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    在侧边栏打开 Markdown 预览
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , V
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, V
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    禅模式 (Esc ESc to exit)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , Z
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Z
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="debug">
+        调试 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a href="#table-top"
+            style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    断点
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F9
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">F9</td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    开始/继续
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F5
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">F5</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    步进/出
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F11 / Shift + fn + F11
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    F11 / Shift + F11
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    步过
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + F10
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    F10
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    停止
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + fn + F5
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + F5
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示悬停
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + K , Command + I
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + K, Ctrl + I
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="integrated-terminal">
+        集成终端 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a
+            href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+      <div class="flex flex-col">
+        <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+            <table class="min-w-full rextable">
+              <thead>
+                <tr class="bg-gray-300">
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    What for
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Mac OS
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-bold text-gray-600 uppercase tracking-wider">
+                    Linux / Windows
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    显示集成终端
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Control + ` (反引号)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + ` (反引号)
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    创建新终端
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Control + ` (反引号)
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + ` (反引号)
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    复制选中
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + C
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + C || Ctrl + C
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    向上/下滚动
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + 上方向键 / 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Ctrl + Shift + 上方向键 / 下方向键 || Ctrl + 上方向键 / 下方向键
+                  </td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    向上/下滚动页面
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    fn + 上方向键 / 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + PgUP / PgDn
+                  </td>
+                </tr>
+                <tr class="bg-gray-200">
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                    Ctrl+Home / End 滚动到顶部/底部
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Command + 上方向键 / 下方向键
+                  </td>
+                  <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-700">
+                    Shift + Home / End || Ctrl + Home + End
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m-10">
+      <h2 class="py-4 px-2 font-bold uppercase text-blue-600" id="useful-resources">
+        实用资源 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-xs text-gray-900"><a
+            href="#table-top" style="color: white">↑top</a></span>
+      </h2>
+    </section>
+  </div>
+  <footer style="background-color: #020a2c" class="sticky text-center text-white width-full">
+    <a class="font-bold text-indigo-600" rel="noopener" href="https://paystack.com/pay/support-me"
+      target="_blank">Support me ☕ here</a><br />
+    www.vscode-shortcuts.com © 2022
+  </footer>
+  <script src="upup.min.js"></script>
+  <script type="text/javascript" language="javascript" src="./public/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" language="javascript" src="./public/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript" src="./public/js/dataTables.responsive.min.js"></script>
+  <script>
+    UpUp.start({
+      "content-url": "index.html",
+      assets: [
+        "./public/css/styles.css",
+        "./public/img/vscode-logo-edit.png",
+        "./public/img/vscodepro-course.jpg",
+        "./public/img/nodecli-featured.jpg",
+        "./public/css/jquery.dataTables.min.css",
+        "./public/css/responsive.dataTables.min.css",
+        "./public/js/jquery-3.5.1.js",
+        "./public/js/dataTables.responsive.min.js",
+        "./public/js/jquery.dataTables.min.js",
+      ],
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".rextable").DataTable({
+        paging: false,
+        ordering: false,
+        info: false,
+        responsive: true,
+        scrollY: 400,
+      });
+    });
+  </script>
+</body>
+
+</html>
